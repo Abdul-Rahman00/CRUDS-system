@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS System</title>
+    <link rel="stylesheet" href="../cruds/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../cruds/css/style.css">
+
+</head>
+<body>
+
+    <div class="w-75 mx-auto my-4">
+
+
+        <div class="mb-3">
+        <label for="productName">Product Name</label>
+        <input class="form-control my-2" type="text" id="productName">
+    </div>
+        <div class="mb-3">
+        <label for="productPrice">Product Price</label>
+        <input class="form-control my-2" type="number" id="productPrice">
+    </div>
+        <div class="mb-3">
+        <label for="productCategory">Product Categoty</label>
+        <input class="form-control my-2" type="text" id="productCategory">
+    </div>
+        <div class="mb-3">
+        <label for="productDescription">Product Description</label>
+        <input class="form-control my-2" type="text" id="productDescription">
+    </div>
+
+    <div>
+        <button id="mainBtn" onclick="addProduct()" class="btn btn-primary">add product</button>
+    </div>
+    <br>
+
+    <div class="w-85 mx-auto">
+        <label for="searchProduct">Search by Product Name</label>
+        <input onkeyup="searchProduct(this.value)" class="form-control" type="text" id="searchProduct">
+
+    </div>
+    <br><br>
+
+
+    <table class="table text-center w-85 m-auto py-3">
+
+        <thead>
+            <th>index</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Categoty</th>
+            <th>Description</th>
+            <th>update</th>
+            <th>delete</th>
+        </thead>
+
+        <tbody id="tableInfo">
+        </tbody>
+    </table>
+    </div>
+    
+    
+    <script src="../cruds/js/jquery-3.6.0.min.js"></script>
+    <script src="../cruds/js/bootstrap.bundle.min.js"></script>
+    <script src="../cruds/js/main.js"></script>
+</body>
+</html>
